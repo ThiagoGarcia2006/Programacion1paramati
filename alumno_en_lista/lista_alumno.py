@@ -16,21 +16,21 @@ from funciones_alumnos_lista import *
 TAM = 4
 alumnos = []
 
-#for _ in range(TAM):
-#    nuevo_alumno = []
-#   aux = int(input("Ingrese legajo: "))
-#   nuevo_alumno.append(aux)
-#    aux = input("Ingrese nombre: ")
-#    nuevo_alumno.append(aux)
-#    aux = input("Ingrese genero: ")
-#    nuevo_alumno.append(aux)
-#    aux = int(input("Ingrese nota primer parcial: "))
-#    nuevo_alumno.append(aux)
-#    int(input("Ingrese nota segundo parcial: "))
-#    nuevo_alumno.append(aux)
-#    promedio = calcular_promedio(nuevo_alumno[3], nuevo_alumno[4])
-#    nuevo_alumno.append(promedio)
-#    alumnos.append(nuevo_alumno)
+for _ in range(TAM):
+    nuevo_alumno = []
+    aux = int(input("Ingrese legajo: "))
+    nuevo_alumno.append(aux)
+    aux = input("Ingrese nombre: ")
+    nuevo_alumno.append(aux)
+    aux = input("Ingrese genero: ")
+    nuevo_alumno.append(aux)
+    aux = int(input("Ingrese nota primer parcial: "))
+    nuevo_alumno.append(aux)
+    int(input("Ingrese nota segundo parcial: "))
+    nuevo_alumno.append(aux)
+    promedio = calcular_promedio(nuevo_alumno[3], nuevo_alumno[4])
+    nuevo_alumno.append(promedio)
+    alumnos.append(nuevo_alumno)
 
 mostrar_alumnos(alumnos)  
 cargar_alumnos(alumnos, TAM)
